@@ -4,14 +4,14 @@
       <SideBar />
     </div>
     <div class="column is-three-quarters">
-      <FormComponent />
+      <FormComponent name="play" />
     </div>
   </main>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { handleComponents } from "@/components/handleComponents";
+import { handleComponents } from "@/shared/components/handleComponents";
 const { SideBar, FormComponent } = handleComponents();
 
 export default defineComponent({
