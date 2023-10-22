@@ -4,18 +4,18 @@
       <SideBar />
     </div>
     <div class="column is-three-quarters">
-      <FormComponent name="play" />
+      <TaskScreen />
     </div>
   </main>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { handleComponents } from "@/shared/components/handleComponents";
-const { SideBar, FormComponent } = handleComponents();
+import SideBar from "@/modules/task/components/SideBar/SideBar.vue";
+import TaskScreen from "@/modules/task/screen/Task.screen.vue";
 
 export default defineComponent({
   name: "App",
-  components: { SideBar, FormComponent },
+  components: { SideBar, TaskScreen },
 });
 </script>
